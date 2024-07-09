@@ -1,15 +1,17 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .grid-container {
-    margin: 5%;
+    margin: 20px;
     background-color: #6495ed;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
-    padding: 2%;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    padding: 30px;
+    height: 100vh;
 }
 
 .grid-item {
@@ -26,18 +28,26 @@ body {
     background-color: #6495ed;
 }
 
-li {
+.navbar li {
     display: inline;
     padding: 20px 0px 20px 0px;
     float: left;
 }
 
-li:hover {
+.navbar li:hover {
     background-color: #83aeff;
 }
 
-li a { 
+.navbar li a { 
     text-decoration: none;
     padding: 30px;
     color: white;
+}
+
+#related-links li {
+    padding: 20px;
+}
+
+#related-links {
+    float: right;
 }
