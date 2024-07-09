@@ -3,6 +3,21 @@ body {
     padding: 0;
 }
 
+.grid-container {
+    margin: 5%;
+    background-color: #6495ed;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 2%;
+}
+
+.grid-item {
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+}
+
 .navbar {
     list-style-type: none;
     margin: 0;
