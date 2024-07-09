@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6495ed;
+}
+
+li {
+    display: inline;
+    padding: 20px 0px 20px 0px;
+    float: left;
+}
+
+li:hover {
+    background-color: #83aeff;
+}
+
+li a { 
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+}
