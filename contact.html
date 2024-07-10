@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <title>All about Michigan!</title>
+</head>
+<header>
+    <center>
+        <h1>Contact Us</h1>
+    </center>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lansing.html">Lansing</a></li>
+            <li><a href="detroit.html">Detroit</a></li>
+            <li><a href="annArbor.html">Ann Arbor</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="grid-container" style="grid-template-columns: auto;">
+        <div class="grid-item">
+            <form id="contactform">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <br>
+                <br>
+                <input type="email" placeholder="Email" name="email1">
+                <br>
+                <input type="email" placeholder="Confirm Email" name="email2" onkeyup="confirmEmail()">
+                <p id="emailconfirm" style="color: red;"></p>
+                <br>
+                <textarea form="contactform"></textarea>
+                <br>
+                <br>
+                <button type="submit" name="submitButton">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        var form = document.getElementById('contactform');
+        var confirmMessage = document.getElementById('emailconfirm')
+
+        function confirmEmail() {
+            if(form.email1.value == form.email2.value) {
+                confirmMessage.innerText = "";
+                form.submitButton.disabled = false;
+            } else {
+                confirmMessage.innerText = "Emails must match!"
+                form.submitButton.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>
